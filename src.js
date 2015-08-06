@@ -33,12 +33,53 @@ var yourCode = {
       i++;
     }
     return results;
+  },
+
+  sumOfN: function (num) {
+    return (1 + num) * num / 2;
+  },
+
+  moviesFor: function(actor) {
+    switch (actor) {
+      case "Robin Williams":
+        return "Jumanji, Hook, Good Will Hunting";
+      case "Sandra Bullock":
+        return "Gravity, The Lake House, The Blind Side";
+      case "Daniel Radcliffe":
+        return "All of the Harry Potters";
+      default:
+        return "Please provide an actor or actress";
+    }
+  },
+
+  joinWithForAndIndex: function (array) {
+  var results = "";
+
+  for (var i = 0; i < array.length; i++) {
+    results += array[i]+i;
   }
 
+  return results;
+  },
+
+  joinWithForandToken: function (array) {
+    var results = '';
+
+    for (var i = 0; i <= array.length; i++) {
+      if (i < array.length -1) {
+        results += array[i] + '*';
+      } else {
+        results += array[i];
+      }
+    }
+
+      return results;
+  }
 
 };
 
 module.exports = yourCode;
+
 
 
 
